@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Stickers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Badulakes</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="catalgo.html" class="active">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+       <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filtros-banner">
+      <div class="filtros">
+        <h2>Filtrar por Categoría</h2>
+        <select id="categoria">
+          <option value="todos">Filtrar por tipo de Stickers</option>
+          <option value="Animados">Animados</option>
+          <option value="Música">Música</option>
+          <option value="Frases">Frases</option>
+          <option value="Fútbol">Fútbol</option>
+        </select>
+
+        <select id="subcategoria">
+          <option value="todos">Todas las subcategorías</option>
+          <option value="R&M">Ricky Morty</option>
+          <option value="P&F">Phineas y Ferb</option>
+          <option value="DB">Dragón Ball</option>
+          <option value="BB">Bad Bunny</option>
+          <option value="clasico">Maluma</option>
+          <option value="clasico">Mora</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+      <!-- Producto de ejemplo -->
+      <div class="producto" data-categoria="Animados" data-subcategoria="R&M" data-nombre="Sticker Anime 1" data-precio="1000">
+        <img src="img/stickers/Rick y Morty subidos (110) 27.05/RickMorty001.jpg" alt="Sticker Rick y Morty 1" />
+        <h3>Sticker Anime 1</h3>
+        <p>Gs. 1.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Fútbol" data-subcategoria="R&M" data-nombre="Sticker Anime 1" data-precio="1000">
+        <img src="img/stickers/Rick y Morty subidos (110) 27.05/RickMorty002.jpg" alt="Sticker Rick y Morty 1" />
+        <h3>Sticker Anime 1</h3>
+        <p>Gs. 1.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Música" data-subcategoria="R&M" data-nombre="Sticker Anime 1" data-precio="1000">
+        <img src="img/stickers/Rick y Morty subidos (110) 27.05/RickMorty003.jpeg" alt="Sticker Rick y Morty 1" />
+        <h3>Sticker Anime 1</h3>
+        <p>Gs. 1.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+      <div class="producto" data-categoria="Animados" data-subcategoria="R&M" data-nombre="Sticker Anime 1" data-precio="1000">
+        <img src="img/stickers/Rick y Morty subidos (110) 27.05/RickMorty004.jpg" alt="Sticker Rick y Morty 1" />
+        <h3>Sticker Anime 1</h3>
+        <p>Gs. 1.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Fútbol" data-subcategoria="R&M" data-nombre="Sticker Anime 1" data-precio="1000">
+        <img src="img/stickers/Rick y Morty subidos (110) 27.05/RickMorty005.jpg" alt="Sticker Rick y Morty 1" />
+        <h3>Sticker Anime 1</h3>
+        <p>Gs. 1.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-categoria="Música" data-subcategoria="R&M" data-nombre="Sticker Anime 1" data-precio="1000">
+        <img src="img/stickers/Rick y Morty subidos (110) 27.05/RickMorty006.jpg" alt="Sticker Rick y Morty 1" />
+        <h3>Sticker Anime 1</h3>
+        <p>Gs. 1.000</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+
+      <!-- Podés duplicar este bloque para más productos -->
+    </section>
+  </main>
+  <footer class="footer">
+
+ <div class="footer-redes">
+  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="https://wa.me/595981188037" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+
+  <p class="footer-creditos">© 2025 Badulakes. Diseñado por Emmanuel Ynsfran.</p>
+</footer>
+
+  <script src="scripts.js"></script>
+  <script src="carrito.js"></script>
+
+ <a href="carrito.html" class="boton-flotante-carrito" id="boton-carrito">
+  🛒 <span id="contador-carrito">0</span>
+</a>
+
+</body>
+</html>
